@@ -1,0 +1,896 @@
+/* *****************************************************
+		CSS Styles 
+********************************************************
+
+    Template Name: Amani - Single Product Template
+    Author: Charles Amani
+    Copyright: 2021
+
+********************************************************
+
+Table of Content
+
+	1. Body and Core Section Css
+	2. Header Section Css
+	3. Home Section Css
+	4. Features Section Css
+	5. How It Works Section Css
+    	6. Reviews Section Css
+	7. Contact Us Section Css
+	8. Footer Section Css
+   	9. Scroll-Top Section Css 
+	10. Responsible Section Css
+
+
+******************************************************** */
+
+/* ***********************************
+	1. Body and Core Section Css
+************************************** */
+
+:root {
+    --main-color: #29b965;
+    --color-grey: #333;
+    --color-white: #fff;
+    --color-dark-white: #f2f2f2;
+    --color-black: #000;
+    --color-light-grey: #ccc;
+    --color-dark-grey: #666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    outline: none !important;
+    list-style: none !important;
+    text-decoration: none !important;
+    transition: all .1s linear;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+.title {
+    position: relative;
+    line-height: 0.5;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 4rem;
+    color: var(--main-color);
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.title span,
+.app-title span {
+    display: inline-block;
+    position: relative;
+}
+
+.app-title span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 1px solid var(--main-color);
+    top: 50%;
+    width: 15rem;
+}
+
+.title span:before,
+.title span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 2px solid var(--main-color);
+    top: 50%;
+    width: 3rem;
+}
+
+.title span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.app-title span::after,
+.title span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+/* ***********************************
+	2. Header Section Css
+************************************** */
+
+
+.logo {
+    display: flex;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.logo span {
+    color: var(--color-white);
+    font-size: 1.2rem;
+}
+
+.logo small {
+    margin-left: .3rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--color-black);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6rem;
+    background-color: var(--main-color);
+}
+
+#menu-bar {
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--color-dark-grey);
+    border: .1rem solid var(--color-dark-grey);
+    border-radius: .3rem;
+    padding: .5rem 1.5rem;
+    display: none;
+}
+
+.menus ul li {
+    display: inline;
+    margin-left: 1rem;
+    color: var(-) !important;
+}
+
+.menus ul li a {
+    color: var(--color-white);
+}
+
+.menus ul li a:hover {
+    color: var(--color-grey) !important;
+}
+
+.signin {
+    color: var(--color-grey) !important;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-white);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.signin:hover {
+    background-color: var(--main-color);
+    color: var(--color-white) !important;
+}
+
+.signup {
+    background-color: var(--main-color);
+    border: 1px solid var(--color-white);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.signup:hover {
+    background-color: var(--color-white);
+}
+
+
+
+/* ***********************************
+	3. Home Section Css
+************************************** */
+.homesection {
+    padding: 2rem 9%;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.homesection .content {
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+
+.homesection .content span {
+    color: var(--main-color);
+}
+
+.homesection .content h3 {
+    margin-bottom: 1rem;
+}
+
+.homesection .image {
+    flex: 1 1 40rem;
+}
+
+.homesection .image img {
+    width: 100%;
+    padding: 4rem 2rem;
+}
+
+.home .content h3 {
+    font-size: 5rem;
+    color: var(--color-grey);
+}
+
+.home .content p {
+    font-size: 1.7rem;
+    color: var(--color-dark-grey);
+    padding: 1rem 0;
+}
+
+
+/* **********************************
+	4. Features Section Css
+************************************* */
+
+.features {
+    background-color: var(--color-dark-white);
+}
+
+.features,
+.reviews {
+    padding: 2rem 9%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+}
+
+.features .container,
+.reviews .container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 3rem;
+
+}
+
+.features .container .box,
+.reviews .container .box {
+    text-align: center;
+    border-radius: .2rem;
+    flex: 1 30rem;
+    border: .1rem solid var(--color-light-grey);
+    padding: 1rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.features .container .box:hover,
+.reviews .container .box:hover {
+    border: .1rem solid var(--main-color);
+}
+
+.features .container .box .ti-video-camera,
+.features .container .box .ti-email,
+.features .container .box .ti-layers-alt,
+.features .container .box .ti-image {
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.features .container .box h3 {
+    margin-top: 1rem;
+}
+
+.features .container .box .dot {
+    margin: .5rem 0rem;
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+.features .container .box .content {
+    margin-top: -1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .5rem 1rem;
+    border: .1rem solid var(--main-color);
+    color: var(--main-color);
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: .5rem;
+    z-index: 0;
+    margin-top: 2rem;
+}
+
+.btn:hover {
+    color: var(--color-white);
+    background-color: var(--main-color);
+}
+
+
+
+/* **********************************
+	5. How It Works Section Css
+************************************* */
+.howitworks {
+    text-align: center;
+    padding: 2rem 18%;
+    margin-bottom: 2rem;
+}
+
+.howitworks .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.howitworks .container .left {
+    text-align: right;
+}
+
+.howitworks .container .left .howitworks-box {
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.howitworks .container .left .howitworks-box .ti-thought,
+.howitworks .container .left .howitworks-box .ti-bolt,
+.howitworks .container .left .howitworks-box .ti-stats-up {
+    color: var(--main-color);
+    font-size: 1.8rem;
+}
+
+.howitworks .container .right {
+    text-align: left;
+}
+
+.howitworks .container .right .howitworks-box {
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.howitworks .container .right .howitworks-box .ti-pulse,
+.howitworks .container .right .howitworks-box .ti-bar-chart,
+.howitworks .container .right .howitworks-box .ti-palette {
+    color: var(--main-color);
+    font-size: 1.8rem;
+}
+
+.howitworks .container .center img {
+    margin-top: 1rem;
+    height: 30rem;
+    width: 15rem;
+}
+
+
+
+/* **********************************
+	6. Reviews Section Css
+************************************* */
+#reviews {
+    background-color: var(--color-dark-white);
+
+}
+
+.reviews .container .box .dot {
+    margin: .5rem 0rem;
+    color: var(--main-color);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews .container .box .dot1 {
+    color: var(--color-grey);
+}
+
+.reviews .container {
+    justify-content: center !important;
+    padding-top: 3rem;
+}
+
+.reviews .container .box .ti-face-sad,
+.reviews .container .box .ti-face-smile,
+.reviews .container .box .ti-user,
+.reviews .container .box .ti-stamp {
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.reviews .container .box h3 {
+    margin-top: 2rem;
+}
+
+
+
+/* **********************************
+	7. Contact Us Section Css
+************************************* */
+.contactus {
+    text-align: center;
+    padding: 2rem 20%;
+
+}
+
+.contact-header {
+    margin-top: 2rem;
+}
+
+.contact-header h2 {
+    margin-bottom: 2rem;
+}
+
+.contact-header .ti-headphone-alt {
+    font-size: 4rem !important;
+}
+
+.contact-header .subheader {
+    margin-top: 1rem;
+}
+
+.box-header {
+    border-bottom: 1px solid var(--color-light-grey);
+    padding: 1rem 4rem;
+}
+
+.contactus .box {
+    margin-top: 2rem;
+    border: .15rem solid var(--color-light-grey);
+    border-radius: .2rem;
+    padding: 0rem 4rem 4rem;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.link {
+    margin-top: 1rem;
+}
+
+.link a {
+    color: var(--main-color) !important;
+    border-radius: .3rem;
+    border-bottom: .2rem solid var(--main-color);
+    padding: .5rem;
+}
+
+.link a:hover {
+    color: var(--color-grey) !important;
+    border-bottom: .2rem solid var(--color-grey);
+}
+
+.ti-mobile,
+.ti-desktop,
+.ti-headphone-alt,
+.ti-help-alt {
+    color: var(--color-light-grey);
+    font-size: 2.5rem;
+}
+
+
+
+/* **********************************
+	8. Footer Section Css
+************************************* */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    background-color: var(--main-color);
+    border-top: .2rem solid var(--color-light-grey);
+}
+
+.created {
+    font-size: 1rem;
+}
+
+.created span {
+    color: var(--color-white);
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--color-white);
+}
+
+.social a {
+    color: var(--color-white);
+}
+
+.social a:hover {
+    color: var(--color-grey);
+}
+
+
+
+/* **********************************
+	9. Scroll-Top Css Section
+************************************* */
+#scroll {
+    position: fixed;
+    top: -120%;
+    right: 1rem;
+    padding: .5rem 1rem;
+    font-size: 2rem;
+    color: var(--main-color);
+    border-radius: .5rem;
+    transition: 2s linear;
+    z-index: 1;
+}
+
+#scroll.active {
+    top: calc(100% - 6rem);
+}
+
+body::-webkit-scrollbar {
+    width: .5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--color-light-grey);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 6px;
+    border: 3px solid var(--main-color);
+}
+
+body {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+
+
+/* **********************************
+	9. Responsive Css Section 
+************************************* */
+
+@media only screen and (max-width: 860px) {
+
+    .features .container,
+    .reviews .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #menu-bar {
+        display: initial;
+        font-size: .9rem;
+    }
+
+    .menu-bar {
+        padding: .5rem 2rem;
+    }
+
+    .logo {
+        font-size: .1rem;
+    }
+
+    .ti-menu {
+        font-size: 1rem;
+    }
+
+    .header {
+        padding: 1rem 1rem;
+    }
+
+    header .menus {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--main-color);
+        border-top: .1rem solid var(--color-white);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        text-align: center;
+        padding: 0rem 1rem 1rem;
+    }
+
+    .header .menus .signup {
+        width: 5rem !important;
+        padding: 0rem 1rem;
+    }
+
+    header .menus.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .menus ul li a {
+        border-bottom: .1rem solid var(--color-white);
+        display: block;
+    }
+
+    .features .container,
+    .reviews .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .howitworks {
+        text-align: center;
+        padding: .01rem .1%;
+
+    }
+
+    .howitworks .container {
+        gap: 0rem;
+    }
+
+    .howitworks .container .left .howitworks-box,
+    .howitworks .container .right .howitworks-box {
+        padding: 1rem;
+        margin: .1rem;
+    }
+
+    .howitworks .container .center img {
+        margin-top: 1rem;
+        height: 26rem;
+        width: 12rem;
+    }
+
+    #scroll {
+        right: .1rem;
+        padding: .5rem .01rem;
+
+    }
+
+    .created {
+        font-size: .6rem !important;
+        padding-bottom: .5rem;
+    }
+
+    .contactus {
+        text-align: center;
+        padding: 2rem 9%;
+
+    }
+
+    .contactus .box {
+        padding: .1rem;
+    }
+
+    .option {
+        margin: 2rem;
+    }
+
+    .footer {
+        display: block;
+        padding: .5rem 5%;
+        font-size: .6rem;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .features .container,
+    .reviews .container,
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .homesection {
+        display: block;
+    }
+
+    .homesection .image img {
+        width: 80%;
+        padding: 1rem 0rem 1rem 0rem;
+        text-align: center;
+    }
+
+    .app-title span:after {
+        width: 2rem;
+    }
+
+    .features .container,
+    .reviews .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .howitworks {
+        text-align: center;
+        padding: .01rem .1%;
+    }
+
+    .howitworks .container {
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .001rem;
+        left: -1rem;
+    }
+
+    .howitworks .container .howitworks-box {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        font-size: .7rem;
+        background-color: var(--main-color);
+        border: 1rem solid #fff;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .howitworks .container .center img {
+        display: none;
+    }
+
+    .ti-mobile,
+    .ti-desktop,
+    .ti-headphone-alt,
+    .ti-help-alt {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        display: block;
+        padding: .5rem 5%;
+        font-size: .6rem;
+        text-align: center;
+    }
+
+    .created {
+        font-size: .6rem !important;
+        padding-bottom: .5rem;
+    }
+
+    .contactus {
+        text-align: center;
+        padding: 2rem 9%;
+
+    }
+
+    .contactus .box {
+        padding: .1rem;
+    }
+
+    .option {
+        margin: 2rem;
+    }
+
+    .link {
+        margin-top: .5rem;
+    }
+
+    .link a {
+        border-bottom: .1rem solid var(--main-color);
+        padding: .1rem;
+        font-size: .7rem;
+    }
+
+    .link a:hover {
+        border-bottom: .1rem solid var(--color-grey);
+    }
+
+    .contactus .container .box .option {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box-header {
+        border-bottom: 1px solid var(--color-light-grey);
+        padding: 1rem 0rem;
+        font-size: .6rem;
+    }
+
+    #scroll {
+        right: .1rem;
+        padding: .5rem .01rem;
+
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .homesection {
+        display: block;
+    }
+
+    .homesection .image img {
+        width: 80%;
+        padding: 1rem 0rem 1rem 0rem;
+        text-align: center;
+    }
+
+    .app-title span:after {
+        width: 2rem;
+    }
+
+    .features .container,
+    .reviews .container {
+        grid-template-columns: 100%;
+    }
+
+    .howitworks .container {
+        display: block;
+    }
+
+    .howitworks .container .howitworks-box {
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+        font-size: .8rem;
+        background-color: var(--main-color);
+        border: 1rem solid #fff;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .howitworks .container .center img {
+        display: none;
+    }
+
+    .ti-mobile,
+    .ti-desktop,
+    .ti-headphone-alt,
+    .ti-help-alt {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        display: block;
+        padding: .5rem 5%;
+        font-size: .6rem;
+        text-align: center;
+    }
+
+    .created {
+        font-size: .6rem !important;
+        padding-bottom: .5rem;
+    }
+
+    .contactus,
+    .howitworks {
+        text-align: center;
+        padding: 2rem 9%;
+
+    }
+
+    .contactus .box {
+        padding: .1rem;
+    }
+
+    .option {
+        margin: 2rem;
+    }
+
+    .link {
+        margin-top: .5rem;
+    }
+
+    .link a {
+        border-bottom: .1rem solid var(--main-color);
+        padding: .1rem;
+        font-size: .7rem;
+    }
+
+    .link a:hover {
+        border-bottom: .1rem solid var(--color-grey);
+    }
+
+    .contactus .container .box .option {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box-header {
+        border-bottom: 1px solid var(--color-light-grey);
+        padding: 1rem 0rem;
+        font-size: .6rem;
+    }
+
+    #scroll {
+        right: .1rem;
+        padding: .5rem .01rem;
+
+    }
+}
